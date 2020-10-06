@@ -1,0 +1,32 @@
+#include <stdio.h>
+
+int main(void) {
+	// your code goes here
+	int rem,rev=0,n,ori_no,temp,start,end;
+	printf("enter the start limit\n");
+	scanf("%d",&start);
+	printf("enter th upper limit\n");
+	scanf("%d",&end);
+    printf("between %d and %d\n",start,end);
+	for(n=start;n<=end;n++)
+	{
+	   temp=n; 
+	
+	while(temp)
+	{
+	    rem=temp%10;
+	    rev=rev*10+rem;
+	    temp=temp/10;
+	    
+	}
+
+	if(n==rev)
+	{
+	    printf("%d",n);
+	    
+	}
+
+	}
+	return 0;
+}
+
